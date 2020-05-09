@@ -471,7 +471,7 @@
 					if(istype(active2, /datum/data/record))
 						var/list/buttons = list()
 						buttons[++buttons.len] = list("name" = "None", "icon" = "unlock", "href" = "criminal=none", "status" = (active2.fields["criminal"] == "None" ? "selected" : null))
-						buttons[++buttons.len] = list("name" = "*Arrest*", "icon" = "lock", "href" = "criminal=arrest", "status" = (active2.fields["criminal"] == "*Arrest*" ? "selected" : null))
+						buttons[++buttons.len] = list("name" = "*Arrest*", "icon" = "lock", "href" = "criminal=arrest", "status" = (active2.fields["criminal"] == SEC_RECORD_STATUS_ARREST ? "selected" : null))
 						buttons[++buttons.len] = list("name" = "Search", "icon" = "lock", "href" = "criminal=search", "status" = (active2.fields["criminal"] == "Search" ? "selected" : null))
 						buttons[++buttons.len] = list("name" = "Monitor", "icon" = "lock", "href" = "criminal=monitor", "status" = (active2.fields["criminal"] == "Monitor" ? "selected" : null))
 						buttons[++buttons.len] = list("name" = "Demote", "icon" = "lock", "href" = "criminal=demote", "status" = (active2.fields["criminal"] == "Demote" ? "selected" : null))
