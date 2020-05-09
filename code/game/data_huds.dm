@@ -226,7 +226,7 @@
 				if("*Execute*")
 					holder.icon_state = "hudexecute"
 					return
-				if("*Arrest*")
+				if(SEC_RECORD_STATUS_ARREST)
 					holder.icon_state = "hudwanted"
 					return
 				if("Search")
